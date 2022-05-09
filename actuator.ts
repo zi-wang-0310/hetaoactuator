@@ -2,25 +2,25 @@
  * Well known colors for a Actuator strip
  */
 enum ActuatorColors {
-    //% block=red
+    //% block=红
     Red = 0xFF0000,
-    //% block=orange
+    //% block=橙
     Orange = 0xFFA500,
-    //% block=yellow
+    //% block=黄
     Yellow = 0xFFFF00,
-    //% block=green
+    //% block=绿
     Green = 0x00FF00,
-    //% block=blue
+    //% block=蓝
     Blue = 0x0000FF,
-    //% block=indigo
+    //% block=靛蓝
     Indigo = 0x4b0082,
-    //% block=violet
+    //% block=紫罗兰
     Violet = 0x8a2be2,
-    //% block=purple
+    //% block=紫
     Purple = 0xFF00FF,
-    //% block=white
+    //% block=白
     White = 0xFFFFFF,
-    //% block=black
+    //% block=黑
     Black = 0x000000
 }
 
@@ -58,7 +58,7 @@ namespace actuator {
          * Shows all LEDs to a given color (range 0-255 for r, g, b).
          * @param rgb RGB color of the LED
          */
-        //% blockId="actuator_set_strip_color" block="%strip|show color %rgb=actuator_colors"
+        //% blockId="actuator_set_strip_color" block="%strip|显示颜色 %rgb=actuator_colors"
         //% strip.defl=灯带
         //% weight=85 blockGap=8
         //% parts="actuator"
@@ -74,7 +74,7 @@ namespace actuator {
          * @param startHue the start hue value for the rainbow, eg: 1
          * @param endHue the end hue value for the rainbow, eg: 360
          */
-        //% blockId="actuator_set_strip_rainbow" block="%strip|show rainbow from %startHue|to %endHue"
+        //% blockId="actuator_set_strip_rainbow" block="%strip|显示彩虹特效从 %startHue|到 %endHue"
         //% strip.defl=灯带
         //% weight=85 blockGap=8
         //% parts="actuator"
@@ -143,7 +143,7 @@ namespace actuator {
          * @param high maximum value, eg: 255
          */
         //% weight=84
-        //% blockId=actuator_show_bar_graph block="%strip|show bar graph of %value|up to %high"
+        //% blockId=actuator_show_bar_graph block="%strip|显示柱状图 值 %value|最大值 %high"
         //% strip.defl=灯带
         //% icon="\uf080"
         //% parts="actuator"
@@ -182,7 +182,7 @@ namespace actuator {
          * @param pixeloffset position of the Actuator in the strip
          * @param rgb RGB color of the LED
          */
-        //% blockId="actuator_set_pixel_color" block="%strip|set pixel color at %pixeloffset|to %rgb=actuator_colors"
+        //% blockId="actuator_set_pixel_color" block="%strip|设置颜色 LED %pixeloffset|为 %rgb=actuator_colors"
         //% strip.defl=灯带
         //% blockGap=8
         //% weight=80
@@ -232,7 +232,7 @@ namespace actuator {
         /**
          * Send all the changes to the strip.
          */
-        //% blockId="actuator_show" block="%strip|show" blockGap=8
+        //% blockId="actuator_show" block="%strip|刷新显示" blockGap=8
         //% strip.defl=灯带
         //% weight=79
         //% parts="actuator"
@@ -247,7 +247,7 @@ namespace actuator {
          * Turn off all LEDs.
          * You need to call ``show`` to make the changes visible.
          */
-        //% blockId="actuator_clear" block="%strip|clear"
+        //% blockId="actuator_clear" block="%strip|清除显示"
         //% strip.defl=灯带
         //% weight=76
         //% parts="actuator"
@@ -260,7 +260,7 @@ namespace actuator {
         /**
          * Gets the number of pixels declared on the strip
          */
-        //% blockId="actuator_length" block="%strip|length" blockGap=8
+        //% blockId="actuator_length" block="%strip|LED的数目" blockGap=8
         //% strip.defl=灯带
         //% weight=60 
         //% subcategory=RGB灯带
@@ -272,7 +272,7 @@ namespace actuator {
          * Set the brightness of the strip. This flag only applies to future operation.
          * @param brightness a measure of LED brightness in 0-255. eg: 255
          */
-        //% blockId="actuator_set_brightness" block="%strip|set brightness %brightness" blockGap=8
+        //% blockId="actuator_set_brightness" block="%strip|设置亮度为 %brightness" blockGap=8
         //% strip.defl=灯带
         //% weight=59
         //% parts="actuator" 
@@ -284,7 +284,7 @@ namespace actuator {
         /**
          * Apply brightness to current colors using a quadratic easing function.
          **/
-        //% blockId="actuator_each_brightness" block="%strip|ease brightness" blockGap=8
+        //% blockId="actuator_each_brightness" block="%strip|减小亮度" blockGap=8
         //% strip.defl=灯带
         //% weight=58
         //% parts="actuator" 
@@ -316,7 +316,7 @@ namespace actuator {
          * @param length number of LEDs in the range. eg: 4
          */
         //% weight=89
-        //% blockId="actuator_range" block="%strip|range from %start|with %length|leds"
+        //% blockId="actuator_range" block="%strip|从LED %start|开始 长度 %length|颗LED"
         //% strip.defl=灯带
         //% parts="actuator"
         //% blockSetVariable=范围
@@ -340,7 +340,7 @@ namespace actuator {
          * You need to call ``show`` to make the changes visible.
          * @param offset number of pixels to shift forward, eg: 1
          */
-        //% blockId="actuator_shift" block="%strip|shift pixels by %offset" blockGap=8
+        //% blockId="actuator_shift" block="%strip|移动LED 偏移量 by %offset" blockGap=8
         //% strip.defl=灯带
         //% weight=40
         //% parts="actuator"
@@ -356,7 +356,7 @@ namespace actuator {
          * You need to call ``show`` to make the changes visible.
          * @param offset number of pixels to rotate forward, eg: 1
          */
-        //% blockId="actuator_rotate" block="%strip|rotate pixels by %offset" blockGap=8
+        //% blockId="actuator_rotate" block="%strip|循环LED 偏移量 %offset" blockGap=8
         //% strip.defl=灯带
         //% weight=39
         //% parts="actuator"
@@ -482,7 +482,7 @@ namespace actuator {
      * @param pin the pin where the actuator is connected.
      * @param numleds number of leds in the strip, eg: 24,30,60,64
      */
-    //% blockId="actuator_create" block="Actuator at pin %pin|with %numleds|leds"
+    //% blockId="actuator_create" block="引脚 %pin|初始化灯带 %numleds|颗LED"
     //% weight=90 blockGap=8
     //% parts="actuator"
     //% trackArgs=0,2
@@ -508,7 +508,7 @@ namespace actuator {
      * @param blue value of the blue channel between 0 and 255. eg: 255
      */
     //% weight=1 blockGap=8
-    //% blockId="actuator_rgb" block="red %red|green %green|blue %blue"
+    //% blockId="actuator_rgb" block="RGB（红 %red|绿 %green|蓝 %blue ）"
     //% subcategory=RGB灯带
     export function rgb(red: number, green: number, blue: number): number {
         return packRGB(red, green, blue);
