@@ -340,7 +340,7 @@ namespace actuator {
          * You need to call ``show`` to make the changes visible.
          * @param offset number of pixels to shift forward, eg: 1
          */
-        //% blockId="actuator_shift" block="%strip|移动LED 偏移量 by %offset" blockGap=8
+        //% blockId="actuator_shift" block="%strip|移动LED 偏移量 %offset" blockGap=8
         //% strip.defl=灯带
         //% weight=40
         //% parts="actuator"
